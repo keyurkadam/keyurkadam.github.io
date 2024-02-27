@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Raleway", sans-serif;
+  }
+}
+
+/* play with vars for different effets */
+:root {
+  --color-cursor: 254, 254, 253;
+  --cursor-outline-shade: 0.3;
+  --cursor-size: 30px;
+  --cursor-outline-size: 12px;
+}
+
+html,
+body {
+  cursor: none;
+}
+
+html *,
+body * {
+  cursor: none;
+}
+
+#cursor-dot,
+#cursor-dot-outline {
+  z-index: 999;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+}
+
+#cursor-dot {
+  width: var(--cursor-size);
+  height: var(--cursor-size);
+  background-color: rgba(var(--color-cursor), 1);
+}
+
+#cursor-dot-outline {
+  width: var(--cursor-outline-size);
+  height: var(--cursor-outline-size);
+  background-color: rgba(var(--color-cursor), var(--cursor-outline-shade));
+}
+
+.f {
+  background-color: #3b5999;
+}
+
+.h {
+  background-color: #000000;
+}
+
+@keyframes border-transform {
+  0%,
+  100% {
+    border-radius: 50%;
+    top: 0px;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+    top: 3px;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+    top: 5px;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+    top: 7px;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+    top: 10px;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+    top: 7px;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+    top: 5px;
+  }
+}
+@keyframes border-transform1 {
+  0%,
+  100% {
+    border-radius: 43% 47% 57% 60% / 55% 48% 52% 45%;
+    top: 0px;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 51% 49% 65% 55% / 61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 57% 49% 57% 43% / 70% 50% 50% 30%;
+    top: 2px;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+    top: 6px;
+  }
+}
+
+.blast {
+  animation: bubble-blast 0.4s 1;
+}
+@keyframes bubble-blast {
+}
