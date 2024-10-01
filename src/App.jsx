@@ -6,10 +6,13 @@ import NavBar from "./components/NavBar";
 import Portfoilo from "./components/Portfoilo";
 import Skills from "./components/Skills";
 import SocialLinks from "./components/SocialLinks";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <>
+    // <div className="h-screen overflow-auto">
+    <div className="">
       {/* <NavBar /> */}
       <Cursor />
       <Home />
@@ -17,7 +20,9 @@ function App() {
       <About />
       <Skills />
       <Portfoilo />
-    </>
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 

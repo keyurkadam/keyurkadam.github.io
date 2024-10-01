@@ -6,6 +6,7 @@ import nodeImage from "../assets/logos/nodejs.png";
 import mysqlImage from "../assets/logos/mysql.png";
 import mongoImage from "../assets/logos/mongodb.png";
 
+
 import {
   FaReact,
   FaHtml5,
@@ -14,8 +15,9 @@ import {
   FaLaravel,
   FaPhp,
   FaPython,
+  FaAws,
 } from "react-icons/fa";
-import { SiMysql, SiMongodb, SiCraftcms, SiCodeigniter } from "react-icons/si";
+import { SiMysql, SiMongodb, SiCraftcms, SiCodeigniter, SiTailwindcss, SiExpress } from "react-icons/si";
 import { IoLogoGithub } from "react-icons/io";
 
 const Skills = () => {
@@ -28,14 +30,14 @@ const Skills = () => {
     },
     {
       id: "2",
-      name: "HTML",
-      icon: <FaHtml5 size={75} className="mx-auto mb-4" />,
+      name: "AWS",
+      icon: <FaAws size={75} className="mx-auto mb-4" />,
       level: "90%",
     },
     {
       id: "3",
-      name: "CSS",
-      icon: <FaCss3Alt size={75} className="mx-auto mb-4" />,
+      name: "ExpressJs",
+      icon: <SiExpress size={75} className="mx-auto mb-4" />,
       level: "90%",
     },
     {
@@ -92,20 +94,39 @@ const Skills = () => {
       icon: <FaPython size={75} className="mx-auto mb-4" />,
       level: "90%",
     },
+    {
+      id: "13",
+      name: "Tailwind CSS",
+      icon: <SiTailwindcss size={75} className="mx-auto mb-4" />,
+      level: "90%",
+    },
+    {
+      id: "14",
+      name: "HTML",
+      icon: <FaHtml5 size={75} className="mx-auto mb-4" />,
+      level: "90%",
+    },
+    {
+      id: "15",
+      name: "CSS",
+      icon: <FaCss3Alt size={75} className="mx-auto mb-4" />,
+      level: "90%",
+    },
   ];
 
   return (
     <div
       name="skills"
-      className="w-full h-screen bg-custom-bg text-custom-yellow-color"
+      className="w-full bg-custom-bg text-custom-yellow-color"
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full text-center">
-        <div className="pb-8 relative">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full ">
+        <div className="pb-8 ">
           {/* <div class="underline2"></div> */}
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+          <p className="text-4xl font-bold inline  border-gray-500">
             {/* <p className="text-4xl font-bold inline  items-center justify-center"> */}
-            Skills
+            # Skills
           </p>
+          
         </div>
 
         <div className="flex flex-wrap gap-4 mb-4 justify-center">

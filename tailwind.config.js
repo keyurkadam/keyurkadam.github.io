@@ -2,7 +2,16 @@
 export default {
   content: ["./src/**/*.jsx"],
   theme: {
-    extend: {},
+    extend: {
+      scrollbar: {
+        hide: {
+          '&::-webkit-scrollbar': {
+            display: 'none',
+          },
+          'scrollbar-width': 'none',
+        }
+      }
+    },
     fontFamily: {
       signature: ["Great Vibes"],
       custom_outline: ["Bungee Outline"],
@@ -28,5 +37,16 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.scrollbar-hidden': {
+          '&::-webkit-scrollbar': {
+            display: 'none',
+          },
+          'scrollbar-width': 'none',
+        },
+      });
+    },
+  ],
 };

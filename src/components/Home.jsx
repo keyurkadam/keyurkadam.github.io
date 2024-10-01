@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImage from "../assets/profile_photo.jpg";
+import HeroImage from "../assets/profile_photo_2.jpg";
 import { MdKeyboardArrowRight, MdOpacity } from "react-icons/md";
 import { TypeAnimation } from "react-type-animation";
 import { FaLinkedinIn } from "react-icons/fa6";
@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div name="home" className="h-screen w-full bg-custom-bg  ">
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center w-full h-full px-4 md:flex-row">
-        <div className="flex flex-col justify-center h-full">
+        <div className="flex flex-col justify-center h-full w-full">
           <div className="flex justify-between items-center">
             <div className="w-fit">
               <img
@@ -34,7 +34,7 @@ const Home = () => {
               <span>I am a </span>
               <TypeAnimation
                 sequence={[
-                  "Full Stack Developer",
+                  "Full-Stack Software Developer",
                   2000,
                   "Problem Solver",
                   2000,
@@ -46,13 +46,14 @@ const Home = () => {
               />
             </h2>
           </div>
-          <p className="text-custom-yellow-color xl:text-[1.3rem] 2xl:text-[1.5rem] lg:text-base md:text-sm text-xs xl:leading-8 2xl:leading-9 lg:leading-6 leading-5 mb-6 md:mb-0">
+          
+          {/* <p className="text-custom-yellow-color xl:text-[1.3rem] 2xl:text-[1.5rem] lg:text-base md:text-sm text-xs xl:leading-8 2xl:leading-9 lg:leading-6 leading-5 mb-6 md:mb-0">
             As a frontend developer, my expertise lies in creating seamless and
             intuitive user experiences. I specialize in using cutting-edge
             technologies to produce high-quality web applications. Specifically,
             I have vast knowledge of ReactJS and NodeJS, which allow me to build
             complex and dynamic applications with ease.
-          </p>
+          </p> */}
           {/* <div>
             <button className="group text-custom-yellow-color w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-yellow-900 to-yellow-300 cursor-pointer">
               Portfolio

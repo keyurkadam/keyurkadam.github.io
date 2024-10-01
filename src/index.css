@@ -22,6 +22,16 @@
   --cursor-outline-size: 12px;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 html,
 body {
   cursor: none;
@@ -31,6 +41,8 @@ html *,
 body * {
   cursor: none;
 }
+
+
 
 #cursor-dot,
 #cursor-dot-outline {
