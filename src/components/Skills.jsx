@@ -99,9 +99,11 @@ const Skills = () => {
       name="skills"
       className="w-full h-screen bg-custom-bg text-custom-yellow-color"
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full text-center">
+        <div className="pb-8 relative">
+          {/* <div class="underline2"></div> */}
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+            {/* <p className="text-4xl font-bold inline  items-center justify-center"> */}
             Skills
           </p>
         </div>
